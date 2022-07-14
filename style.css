@@ -1,9 +1,10 @@
 * {
     font-family: 'Arima', cursive;
+    font-family: 'Comfortaa', cursive;
     margin: 0;
     padding: 0;
     font-size: 1.2rem;
-    color: black;
+    color: white;
 }
 
 #main_menu ion-icon {
@@ -52,9 +53,10 @@ header input {
 
 header::before {
     content: "";
-    background: url(./bg.jpg) no-repeat center center/cover;
+    /* background: url(./bg.jpeg) no-repeat center center/cover; */
+    background-color: black;
     position: fixed;
-    opacity: 0.6;
+    opacity: 0.7;
     width: 100%;
     height: 100vh;
     z-index: -1;
@@ -63,7 +65,7 @@ header::before {
 }
 
 header ul :hover {
-    color: rgb(31, 31, 208);
+    color: rgb(255, 0, 0);
 }
 
 header section {
@@ -71,7 +73,6 @@ header section {
     text-align: center;
     top: 30px;
     color: rgb(22, 30, 30);
-    /* flex-direction: column; */
     padding-bottom: 40px;
 }
 
@@ -96,12 +97,12 @@ section p {
     margin-top: 30px;
     border-radius: 12px;
     box-shadow: 2px 2px 2px green;
-    /* opacity: -1 */
 }
 
 #detail p {
     text-align: center;
     width: 50%;
+    margin-top: 20px;
 }
 
 div div {
@@ -115,7 +116,6 @@ div div p {
 
 #carosol {
     position: relative;
-    /* border: 2px solid red; */
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -128,7 +128,6 @@ div div p {
 }
 
 #carosol div {
-    /* border: 2px solid green; */
     width: 30%;
     display: flex;
 }
@@ -155,11 +154,13 @@ div div p {
 
 #detail h1 {
     padding-bottom: 10px;
+    display: inline;
 }
 
 #detail img:hover {
     box-shadow: 8px 8px 10px green;
 }
+
 #small_menu #menu {
     display: none;
 }
@@ -265,6 +266,7 @@ div div p {
 ion-icon {
     font-size: 48px;
 }
+
 /* Responsive design  */
 @media only screen and (max-width:1144px) and (min-width:800px) {
     body header ul li a {
@@ -315,8 +317,6 @@ ion-icon {
     header {
         display: none;
     }
-
-
     #detail {
         display: flex;
         flex-direction: column;
@@ -327,6 +327,9 @@ ion-icon {
         text-align: center;
         margin: 5px;
 
+    }
+    body{
+        background-color: black;
     }
 
     #detail img {
@@ -342,10 +345,12 @@ ion-icon {
         margin: auto;
         width: 100%;
     }
-    #carosol div img{
+
+    #carosol div img {
         position: relative;
         left: 25%;
     }
+
     #small_menu #menu {
         display: block;
     }
@@ -353,6 +358,3 @@ ion-icon {
 
 
 }
-
-
-
